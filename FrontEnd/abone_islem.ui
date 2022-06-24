@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>abone_islem</class>
+ <widget class="QDialog" name="abone_islem">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>696</width>
+    <height>607</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ABONE İŞLEMLERİ FORMU</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#abone_islem{
+image: url(:/abonebg.png);
+}</string>
+  </property>
+  <widget class="QTableView" name="abonetablosu">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>410</y>
+     <width>671</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">abonetablosu {
+    show-decoration-selected: 1;
+}
+
+
+abonetablosu::item:alternate {
+    background: #EEEEEE;
+}
+
+abonetablosu::item:selected {
+    border: 0px solid;
+}
+
+abonetablosu::item:selected:!active {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #E5ABAF, stop: 1 #B28588);
+}
+
+abonetablosu::item:selected:active {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #a96a6e, stop: 1 #d9888d);
+}
+
+abonetablosu::item:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #FAFBFE, stop: 1 #F1DCDE);
+}</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="kayitli_aboneler">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>380</y>
+     <width>231</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;321impact&quot;;
+border-color: rgb(170, 0, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>KAYITLI ABONELERİMİZ</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="yeniabone">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>320</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Abone Ekleme&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#yeniabone{
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(130, 0, 0, 255));
+border-width: 1px;
+border-color:#FEB201;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+}
+#yeniabone:hover{
+background-color: rgb(33, 57, 94);
+border-color: rgb(130, 0, 0);
+}
+#yeniabone:pressed{
+background-color: rgb(0, 0, 127);
+border-color: rgb(85, 255, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>Yeni Abone</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="aboneduzenle">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>320</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Aboneyi Güncelle&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#aboneduzenle{
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(130, 0, 0, 255));
+border-width: 1px;
+border-color:#FEB201;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+}
+#aboneduzenle:hover{
+background-color: rgb(33, 57, 94);
+border-color: rgb(130, 0, 0);
+}
+#aboneduzenle:pressed{
+background-color: rgb(0, 0, 127);
+border-color: rgb(85, 255, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>Abone Güncelle</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="abonesil">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>320</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Aboneyi Sil&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#abonesil{
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(130, 0, 0, 255));
+border-width: 1px;
+border-color:#FEB201;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+}
+#abonesil:hover{
+background-color: rgb(33, 57, 94);
+border-color: rgb(130, 0, 0);
+}
+#abonesil:pressed{
+background-color: rgb(0, 0, 127);
+border-color: rgb(85, 255, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>Abone Sil</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cikis">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>320</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;Menüden Çıkış&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#cikis{
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(130, 0, 0, 255));
+border-width: 1px;
+border-color:#FEB201;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+}
+#cikis:hover{
+background-color: rgb(33, 57, 94);
+border-color: rgb(130, 0, 0);
+}
+#cikis:pressed{
+background-color: rgb(0, 0, 127);
+border-color: rgb(85, 255, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>İptal Et</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="abone_arac_renk">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>180</y>
+     <width>221</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="abone_arac_marka">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>92</y>
+     <width>221</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="abone_arac_model">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>136</y>
+     <width>221</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="abone_arac_plaka">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>48</y>
+     <width>221</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="abone_soyadi">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>140</y>
+     <width>188</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="abone_kimlik_no">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>50</y>
+     <width>188</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="abone_cep_no">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>185</y>
+     <width>188</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="abone_adi">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>95</y>
+     <width>188</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="abone_durum">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>270</y>
+     <width>531</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/statusbar.png);
+color: rgb(170, 0, 0);
+font: 12pt &quot;321impact&quot;;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="abone_sure">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>230</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>7 Gün</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>15 Gün</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>30 Gün</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>90 Gün</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>180 Gün</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>270 Gün</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>360 Gün</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="id">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>270</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>abone_kimlik_no</tabstop>
+  <tabstop>abone_adi</tabstop>
+  <tabstop>abone_soyadi</tabstop>
+  <tabstop>abone_cep_no</tabstop>
+  <tabstop>abone_sure</tabstop>
+  <tabstop>abone_arac_plaka</tabstop>
+  <tabstop>abone_arac_marka</tabstop>
+  <tabstop>abone_arac_model</tabstop>
+  <tabstop>abone_arac_renk</tabstop>
+  <tabstop>yeniabone</tabstop>
+  <tabstop>aboneduzenle</tabstop>
+  <tabstop>abonesil</tabstop>
+  <tabstop>cikis</tabstop>
+  <tabstop>abonetablosu</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>yeniabone</sender>
+   <signal>clicked()</signal>
+   <receiver>abonetablosu</receiver>
+   <slot>update()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>132</x>
+     <y>342</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>158</x>
+     <y>446</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

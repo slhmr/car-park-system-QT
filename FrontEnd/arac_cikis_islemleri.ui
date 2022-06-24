@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>arac_cikis_islemleri</class>
+ <widget class="QDialog" name="arac_cikis_islemleri">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>779</width>
+    <height>624</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Araç Çıkış Formu</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#arac_cikis_islemleri{
+background-image: url(:/mbg.png);
+}</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>241</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#groupBox{
+font: 11pt &quot;321impact&quot;;
+color: rgb(255, 255, 255);
+}</string>
+   </property>
+   <property name="title">
+    <string>ARAÇ  ARA</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>221</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 11pt &quot;321impact&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Plaka Numarasını Giriniz..&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="arac_bilgileri">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>221</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#arac_bilgileri{
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(130, 0, 0, 255));
+border-width: 1px;
+border-color:#FEB201;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+}
+#arac_bilgileri:hover{
+background-color: rgb(33, 57, 94);
+border-color: rgb(130, 0, 0);
+}
+#arac_bilgileri:pressed{
+background-color: rgb(0, 0, 127);
+border-color: rgb(85, 255, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>Arac Bilgilerini Getir</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="plakano">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>221</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="temizle">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>221</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#temizle{
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(130, 0, 0, 255));
+border-width: 1px;
+border-color:#FEB201;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+}
+#temizle:hover{
+background-color: rgb(33, 57, 94);
+border-color: rgb(130, 0, 0);
+}
+#temizle:pressed{
+background-color: rgb(0, 0, 127);
+border-color: rgb(85, 255, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>Arama Kaydını  Temizle</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QTextEdit" name="aracbilgileri">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>30</y>
+     <width>471</width>
+     <height>571</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="arac_ciki_fisi_yazdir">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>390</y>
+     <width>221</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#arac_ciki_fisi_yazdir{
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(130, 0, 0, 255));
+border-width: 1px;
+border-color:#FEB201;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+}
+#arac_ciki_fisi_yazdir:hover{
+background-color: rgb(33, 57, 94);
+border-color: rgb(130, 0, 0);
+}
+#arac_ciki_fisi_yazdir:pressed{
+background-color: rgb(0, 0, 127);
+border-color: rgb(85, 255, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>Fişi Yazdır</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="arac_cikisini_yap">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>460</y>
+     <width>221</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#arac_cikisini_yap{
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(130, 0, 0, 255));
+border-width: 1px;
+border-color:#FEB201;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+}
+#arac_cikisini_yap:hover{
+background-color: rgb(33, 57, 94);
+border-color: rgb(130, 0, 0);
+}
+#arac_cikisini_yap:pressed{
+background-color: rgb(0, 0, 127);
+border-color: rgb(85, 255, 0);
+}</string>
+   </property>
+   <property name="text">
+    <string>Araç Çıkışını Yap</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cikanaracplaka">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>300</y>
+     <width>241</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 18pt &quot;321impact&quot;;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cikanaracucret">
+   <property name="geometry">
+    <rect>
+     <x>710</x>
+     <y>10</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cikanaraccikissaati">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>10</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cikanarackonum">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>10</y>
+     <width>55</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

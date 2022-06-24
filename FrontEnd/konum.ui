@@ -1,0 +1,1630 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Konum</class>
+ <widget class="QDialog" name="Konum">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>759</width>
+    <height>729</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>759</width>
+    <height>729</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>759</width>
+    <height>729</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Katlar</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../simgeler/simgeler.qrc">
+    <normaloff>:/mavrosoft.png</normaloff>:/mavrosoft.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Konum{background-image: url(:/mbg.png);}</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>731</width>
+     <height>701</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>321impact</family>
+     <pointsize>11</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+background-image: url(:/mbg.png);
+font: 11pt &quot;321impact&quot;;
+border-color: rgb(170, 0, 0);
+
+</string>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>1.Kat</string>
+    </attribute>
+    <widget class="QGroupBox" name="a1">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>30</y>
+       <width>221</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-color: rgb(170, 0, 0);
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;
+</string>
+     </property>
+     <property name="title">
+      <string>A1</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QLabel" name="a1_resim">
+      <property name="geometry">
+       <rect>
+        <x>3</x>
+        <y>30</y>
+        <width>201</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../simgeler/simgeler.qrc">:/mavrosoft.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="a1_plaka">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+border-color: rgb(170, 0, 0);
+font: 11pt &quot;321impact&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Plaka</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="a1_giris_saati">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+border-color: rgb(170, 0, 0);
+font: 11pt &quot;321impact&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Giris Saati</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="a1_sure">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+border-color: rgb(170, 0, 0);
+font: 11pt &quot;321impact&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Sure</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_77">
+     <property name="geometry">
+      <rect>
+       <x>225</x>
+       <y>40</y>
+       <width>21</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/seit.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_78">
+     <property name="geometry">
+      <rect>
+       <x>475</x>
+       <y>40</y>
+       <width>21</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/seit.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_167">
+     <property name="geometry">
+      <rect>
+       <x>219</x>
+       <y>400</y>
+       <width>31</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/seit.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_168">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>400</y>
+       <width>31</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/seit.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="a2">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>30</y>
+       <width>221</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-color: rgb(170, 0, 0);
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;</string>
+     </property>
+     <property name="title">
+      <string>A2</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QLabel" name="a2_resim">
+      <property name="geometry">
+       <rect>
+        <x>3</x>
+        <y>30</y>
+        <width>201</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../simgeler/simgeler.qrc">:/mavrosoft.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="a2_plaka">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Plaka</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="a2_giris_saati">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Giris Saati</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="a2_sure">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Sure</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="a3">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>30</y>
+       <width>221</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-color: rgb(170, 0, 0);
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;</string>
+     </property>
+     <property name="title">
+      <string>A3</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QLabel" name="a3_resim">
+      <property name="geometry">
+       <rect>
+        <x>3</x>
+        <y>30</y>
+        <width>201</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../simgeler/simgeler.qrc">:/mavrosoft.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="a3_plaka">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Plaka</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="a3_giris_saati">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Giris Saati</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="a3_sure">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Sure</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="a6">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>390</y>
+       <width>221</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-color: rgb(170, 0, 0);
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;</string>
+     </property>
+     <property name="title">
+      <string>A6</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QLabel" name="a6_resim">
+      <property name="geometry">
+       <rect>
+        <x>3</x>
+        <y>30</y>
+        <width>201</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../simgeler/simgeler.qrc">:/mavrosoft.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="a6_plaka">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Plaka</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="a6_giris_saati">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Giris Saati</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="a6_sure">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Sure</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="a4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>390</y>
+       <width>221</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-color: rgb(170, 0, 0);
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;</string>
+     </property>
+     <property name="title">
+      <string>A4</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QLabel" name="a4_resim">
+      <property name="geometry">
+       <rect>
+        <x>3</x>
+        <y>30</y>
+        <width>201</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../simgeler/simgeler.qrc">:/mavrosoft.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="a4_plaka">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Plaka</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="a4_giris_saati">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Giris Saati</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="a4_sure">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Sure</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="a5">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>390</y>
+       <width>221</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-color: rgb(170, 0, 0);
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;</string>
+     </property>
+     <property name="title">
+      <string>A5</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QLabel" name="a5_resim">
+      <property name="geometry">
+       <rect>
+        <x>3</x>
+        <y>30</y>
+        <width>201</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../simgeler/simgeler.qrc">:/mavrosoft.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="a5_plaka">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Plaka</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="a5_giris_saati">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Giris Saati</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="a5_sure">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Sure</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>2.Kat</string>
+    </attribute>
+    <widget class="QGroupBox" name="b1">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>30</y>
+       <width>221</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-color: rgb(170, 0, 0);
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;
+</string>
+     </property>
+     <property name="title">
+      <string>B1</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QLabel" name="b1_resim">
+      <property name="geometry">
+       <rect>
+        <x>3</x>
+        <y>30</y>
+        <width>201</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../simgeler/simgeler.qrc">:/mavrosoft.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="b1_plaka">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+border-color: rgb(170, 0, 0);
+font: 11pt &quot;321impact&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Plaka</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="b1_giris_saati">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+border-color: rgb(170, 0, 0);
+font: 11pt &quot;321impact&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Giris Saati</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="b1_sure">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+border-color: rgb(170, 0, 0);
+font: 11pt &quot;321impact&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Sure</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="b6">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>390</y>
+       <width>221</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-color: rgb(170, 0, 0);
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;</string>
+     </property>
+     <property name="title">
+      <string>B6</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QLabel" name="b6_resim">
+      <property name="geometry">
+       <rect>
+        <x>3</x>
+        <y>30</y>
+        <width>201</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../simgeler/simgeler.qrc">:/mavrosoft.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="b6_plaka">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Plaka</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="b6_giris_saati">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Giris Saati</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="b6_sure">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Sure</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="b5">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>390</y>
+       <width>221</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-color: rgb(170, 0, 0);
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;</string>
+     </property>
+     <property name="title">
+      <string>B5</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QLabel" name="b5_resim">
+      <property name="geometry">
+       <rect>
+        <x>3</x>
+        <y>30</y>
+        <width>201</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../simgeler/simgeler.qrc">:/mavrosoft.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="b5_plaka">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Plaka</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="b5_giris_saati">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Giris Saati</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="b5_sure">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Sure</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_169">
+     <property name="geometry">
+      <rect>
+       <x>219</x>
+       <y>400</y>
+       <width>31</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/seit.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_79">
+     <property name="geometry">
+      <rect>
+       <x>225</x>
+       <y>40</y>
+       <width>21</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/seit.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_170">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>400</y>
+       <width>31</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/seit.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="b3">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>30</y>
+       <width>221</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-color: rgb(170, 0, 0);
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;</string>
+     </property>
+     <property name="title">
+      <string>B3</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QLabel" name="b3_resim">
+      <property name="geometry">
+       <rect>
+        <x>3</x>
+        <y>30</y>
+        <width>201</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../simgeler/simgeler.qrc">:/mavrosoft.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="b3_plaka">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Plaka</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="b3_giris_saati">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Giris Saati</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="b3_sure">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Sure</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGroupBox" name="b2">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>30</y>
+       <width>221</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-color: rgb(170, 0, 0);
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;</string>
+     </property>
+     <property name="title">
+      <string>B2</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QLabel" name="b2_resim">
+      <property name="geometry">
+       <rect>
+        <x>3</x>
+        <y>30</y>
+        <width>201</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../simgeler/simgeler.qrc">:/mavrosoft.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="b2_plaka">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Plaka</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="b2_giris_saati">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Giris Saati</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="b2_sure">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Sure</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_80">
+     <property name="geometry">
+      <rect>
+       <x>475</x>
+       <y>40</y>
+       <width>21</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/seit.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="b4">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>390</y>
+       <width>221</width>
+       <height>241</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-color: rgb(170, 0, 0);
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;</string>
+     </property>
+     <property name="title">
+      <string>B4</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <widget class="QLabel" name="b4_resim">
+      <property name="geometry">
+       <rect>
+        <x>3</x>
+        <y>30</y>
+        <width>201</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="../simgeler/simgeler.qrc">:/mavrosoft.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="b4_plaka">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>120</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Plaka</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="b4_giris_saati">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>210</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>Giris Saati</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="b4_sure">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>201</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>321impact</family>
+        <pointsize>11</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Sure</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <zorder>b1</zorder>
+    <zorder>label_169</zorder>
+    <zorder>label_79</zorder>
+    <zorder>label_170</zorder>
+    <zorder>b3</zorder>
+    <zorder>b2</zorder>
+    <zorder>label_80</zorder>
+    <zorder>b4</zorder>
+    <zorder>b5</zorder>
+    <zorder>b6</zorder>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>tabWidget</tabstop>
+ </tabstops>
+ <resources>
+  <include location="../simgeler/simgeler.qrc"/>
+ </resources>
+ <connections/>
+</ui>

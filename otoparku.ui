@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OtoparkU</class>
+ <widget class="QMainWindow" name="OtoparkU">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>870</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>870</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>870</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MAVROSOFT OTOPARK YAZILIMI V1.0</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="simgeler/simgeler.qrc">
+    <normaloff>:/mavrosoft.png</normaloff>:/mavrosoft.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">#centralwidget{
+background-image: url(:/mbg.png);
+}</string>
+   </property>
+   <widget class="QLCDNumber" name="saat">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>159</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>159</width>
+      <height>61</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>159</width>
+      <height>61</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>321impact</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#saat{
+border-color: rgb(85, 0, 0);
+color: rgb(170, 0, 0);
+	font: 11pt &quot;321impact&quot;;
+}</string>
+    </property>
+    <property name="digitCount">
+     <number>8</number>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="mavrosoftmenu">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>159</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>159</width>
+      <height>581</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>159</width>
+      <height>581</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>321impact</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 11pt &quot;321impact&quot;;
+color: rgb(255, 255, 255);
+border-color: rgb(173, 0, 0);
+</string>
+    </property>
+    <property name="title">
+     <string>İŞLEMLER</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <widget class="QPushButton" name="yeniaracgiris">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>321impact</family>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#yeniaracgiris{
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(130, 0, 0, 255));
+border-width: 1px;
+border-color:#FEB201;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+}
+#yeniaracgiris:hover{
+background-color: rgb(43, 72, 117);
+border-color: rgb(130, 0, 0);
+}
+#yeniaracgiris:pressed{
+background-color: rgb(0, 0, 127);
+border-color: rgb(85, 255, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string>Araç Girişi</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="arac_cikis">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>321impact</family>
+       <pointsize>11</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#arac_cikis{
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(130, 0, 0, 255));
+border-width: 1px;
+border-color:#FEB201;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+}
+#arac_cikis:hover{
+background-color: rgb(43, 72, 117);
+border-color: rgb(130, 0, 0);
+}
+#arac_cikis:pressed{
+background-color: rgb(0, 0, 127);
+border-color: rgb(85, 255, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string>Araç Çıkış</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="abone_islemleri">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>150</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#abone_islemleri{
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(130, 0, 0, 255));
+border-width: 1px;
+border-color:#FEB201;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+}
+#abone_islemleri:hover{
+background-color: rgb(43, 72, 117);
+border-color: rgb(130, 0, 0);
+}
+#abone_islemleri:pressed{
+background-color: rgb(0, 0, 127);
+border-color: rgb(85, 255, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string>Abone İşlem</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="hizmetler">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>270</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#hizmetler{
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(130, 0, 0, 255));
+border-width: 1px;
+border-color:#FEB201;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+}
+#hizmetler:hover{
+background-color: rgb(43, 72, 117);;
+border-color: rgb(130, 0, 0);
+}
+#hizmetler:pressed{
+background-color: rgb(0, 0, 127);
+border-color: rgb(85, 255, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string>Hizmetler</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="fiyat_tarifesi">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>330</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#fiyat_tarifesi{
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(130, 0, 0, 255));
+border-width: 1px;
+border-color:#FEB201;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+}
+#fiyat_tarifesi:hover{
+background-color: rgb(43, 72, 117);
+border-color: rgb(130, 0, 0);
+}
+#fiyat_tarifesi:pressed{
+background-color: rgb(0, 0, 127);
+border-color: rgb(85, 255, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string>Fiyat Tarifesi</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="konum">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>210</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#konum{
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(130, 0, 0, 255));
+border-width: 1px;
+border-color:#FEB201;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+}
+#konum:hover{
+background-color: rgb(43, 72, 117);
+border-color: rgb(130, 0, 0);
+}
+#konum:pressed{
+background-color: rgb(0, 0, 127);
+border-color: rgb(85, 255, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string>Araç Konum</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="FormCikis">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>450</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#FormCikis{
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(130, 0, 0, 255));
+border-width: 1px;
+border-color:#FEB201;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+}
+#FormCikis:hover{
+background-color: rgb(43, 72, 117);
+border-color: rgb(130, 0, 0);
+}
+#FormCikis:pressed{
+background-color: rgb(0, 0, 127);
+border-color: rgb(85, 255, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string>Kapat</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="hakkimizda">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>390</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#hakkimizda{
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(130, 0, 0, 255));
+border-width: 1px;
+border-color:#FEB201;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+}
+#hakkimizda:hover{
+background-color: rgb(43, 72, 117);
+border-color: rgb(130, 0, 0);
+}
+#hakkimizda:pressed{
+background-color: rgb(0, 0, 127);
+border-color: rgb(85, 255, 0);
+}</string>
+     </property>
+     <property name="text">
+      <string>Hakkımızda</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="otobulara">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>90</y>
+      <width>341</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#otobulara{
+color: rgb(255, 255, 255);
+font: 14pt &quot;321impact&quot;;
+border-color: rgb(170, 0, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>OTOPARK BULUNAN ARAÇLAR</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTableView" name="musteritablosu">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>130</y>
+      <width>671</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>true</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">musteritablosu {
+    show-decoration-selected: 1;
+}
+
+
+musteritablosu::item:alternate {
+    background: #EEEEEE;
+}
+
+musteritablosu::item:selected {
+    border: 0px solid;
+}
+
+musteritablosu::item:selected:!active {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #E5ABAF, stop: 1 #B28588);
+}
+
+musteritablosu::item:selected:active {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #a96a6e, stop: 1 #d9888d);
+}
+
+musteritablosu::item:hover {
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #FAFBFE, stop: 1 #F1DCDE);
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="otobulara_2">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>410</y>
+      <width>341</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;321impact&quot;;
+border-color: rgb(170, 0, 0);
+</string>
+    </property>
+    <property name="text">
+     <string>KAYITLI ABONELERİMİZ</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::AutoText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QTableView" name="abonetablosu">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>441</y>
+      <width>671</width>
+      <height>221</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="tummusteriler">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>70</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>321impact</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#tummusteriler{
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(130, 0, 0, 255));
+border-width: 1px;
+border-color:#FEB201;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+}
+#tummusteriler:hover{
+background-color: rgb(43, 72, 117);
+border-color: rgb(130, 0, 0);
+}
+#tummusteriler:pressed{
+background-color: rgb(0, 0, 127);
+border-color: rgb(85, 255, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>Tüm Müşteriler</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="aktifmusteriler">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>70</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>321impact</family>
+      <pointsize>11</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#aktifmusteriler{
+color: rgb(255, 255, 255);
+font: 11pt &quot;321impact&quot;;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:1 rgba(130, 0, 0, 255));
+border-width: 1px;
+border-color:#FEB201;
+border-style: solid;
+border-radius: 7;
+padding: 3px;
+padding-left: 5px;
+padding-right: 5px;
+}
+#aktifmusteriler:hover{
+background-color: rgb(43, 72, 117);
+border-color: rgb(130, 0, 0);
+}
+#aktifmusteriler:pressed{
+background-color: rgb(0, 0, 127);
+border-color: rgb(85, 255, 0);
+}</string>
+    </property>
+    <property name="text">
+     <string>Aktif Müşteriler</string>
+    </property>
+    <property name="autoRepeatDelay">
+     <number>999</number>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>870</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 11pt &quot;321impact&quot;;
+border-color: rgb(170, 0, 0);
+color: rgb(255, 255, 255);</string>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>yeniaracgiris</tabstop>
+  <tabstop>arac_cikis</tabstop>
+  <tabstop>abone_islemleri</tabstop>
+  <tabstop>konum</tabstop>
+  <tabstop>hizmetler</tabstop>
+  <tabstop>fiyat_tarifesi</tabstop>
+  <tabstop>FormCikis</tabstop>
+  <tabstop>musteritablosu</tabstop>
+  <tabstop>abonetablosu</tabstop>
+ </tabstops>
+ <resources>
+  <include location="simgeler/simgeler.qrc"/>
+ </resources>
+ <connections/>
+</ui>

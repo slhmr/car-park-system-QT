@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>iptal.png</file>
+        <file>giris.png</file>
+        <file>lbg.png</file>
+        <file>statusbar.png</file>
+        <file>key.png</file>
+        <file>ara.png</file>
+        <file>kaydet.png</file>
+        <file>yenile.png</file>
+        <file>egemensoft.png</file>
+        <file>yeniarac.png</file>
+        <file>mbg.png</file>
+        <file>seit.png</file>
+        <file>abonebg.png</file>
+        <file>vesika.png</file>
+    </qresource>
+</RCC>

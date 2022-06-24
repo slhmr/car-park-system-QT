@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>aboutHak</class>
+ <widget class="QDialog" name="aboutHak">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>762</width>
+    <height>313</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hakkımızda</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../simgeler/simgeler.qrc">
+    <normaloff>:/mavrosoft.png</normaloff>:/mavrosoft.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/mbg.png);</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>231</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/vesika.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>20</y>
+     <width>481</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-style:italic; color:#ffffff;&quot;&gt;1 Ocak 1991 Ankara doğumluyum. Lise yıllarında programlamaya adım attım ve 5 yıl aradan sonra tekrar okumaya karar verip DGS sınavı Karadeniz Teknik Üniversitesi İstatistik ve Bilgisayar Bilimleri Bölümünü başladım ve devam etmekteyim. Şu an 3. sınıftayım &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../simgeler/simgeler.qrc"/>
+ </resources>
+ <connections/>
+</ui>
